@@ -4,12 +4,40 @@
     <title>KaWedding</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ким и Ангелина</title>
+    <meta name="description" content="Wonderful Wedding Template built with Bootstrap Framework for creating Wedding Website by TemplateFlip.com"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
-  <body>
+    <%= stylesheet_link_tag "aos.css" %>
+    <%= stylesheet_link_tag "ekko-lightbox.css" %>
+    <%= stylesheet_link_tag "main.css" %>
+
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+  </head>
+  <body id="top">
+    
     <%= yield %>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <%= javascript_include_tag "aos.js" %>
+    <%= javascript_include_tag "ekko-lightbox.min.js" %>
+    <%= javascript_include_tag "main.js" %>
   </body>
 </html>
+
+
+
+
