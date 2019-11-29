@@ -9032,7 +9032,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-  background-image: url(<%= asset_path "1.jpg" %>) no-repeat center center;
+  background: url("1.jpg") no-repeat center center;
   background-size: cover;
   background-position: 70%;
   height: 100vh;
@@ -9179,7 +9179,7 @@ body {
 
 /* RSVP Style */
 .ww-rsvp-detail {
-  background-image: url(<%= asset_path "rsvp-img.jpg" %>) no-repeat center center;
+  background: url("rsvp-img.jpg") no-repeat center center;
   background-size: cover;
   min-height: 500px;
   position: relative;
