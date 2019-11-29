@@ -5,7 +5,7 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( aos.css )
 Rails.application.config.assets.precompile += %w( ekko-lightbox.css )
-Rails.application.config.assets.precompile += %w( main.scss )
+Rails.application.config.assets.precompile += %w( main.css )
 
 Rails.application.config.assets.precompile += %w( aos.js )
 Rails.application.config.assets.precompile += %w( ekko-lightbox.min.js )
