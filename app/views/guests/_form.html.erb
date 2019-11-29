@@ -1,8 +1,6 @@
-<%= form_with(model: guest, local: true) do |form| %>
+<%= form_with(model: guest, remote: true) do |form| %>
   <% if guest.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(guest.errors.count, "error") %> prohibited this guest from being saved:</h2>
-
       <ul>
       <% guest.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,22 +9,56 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :message %>
-    <%= form.text_area :message %>
-  </div>
-
-  <div class="field">
-    <%= form.label :number_of_guests %>
-    <%= form.number_field :number_of_guests %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
+    <div class="container" >
+      <div class="col text-center">
+        <h2 class="h1 ww-title pb-3" >Будем рады вас видеть</h2>
+      </div>
+      <div class="row ww-rsvp-form">
+        <div class="col-md-10">
+          <div class="card-body">
+            <form action="https://formspree.io/example@email.com" method="POST">
+              <div class="row">
+                <div class="col md-6 pb-3">
+                  <div class="form-group">
+                    <div class="field">
+                      <%= form.label :name, "Ваше Имя*" %>
+                      <%= form.text_field :name, class: "form-control", id: "name-input" %>
+                    </div>
+                  </div>
+                </div>
+                <div class="col md-6 pb-3">
+                  <div class="form-group">
+                    <div class="field">
+                      <%= form.label :number_of_guests, "Кол-во Гостей*" %>
+                      <%= form.select :number_of_guests, options_for_select([1, 2, 3, 4]), {}, { class: "form-control", id: "guests-input" }%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <div class="field">
+                      <%= form.label :message, "Сообщение" %>
+                      <%= form.text_area :message, class: "form-control", id: "message-input", rows: "4" %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <div class="actions">
+                    <%= form.submit "Отправить", class: "btn btn-primary btn-submit" %>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
+
+
