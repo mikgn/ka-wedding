@@ -8,9 +8,6 @@
       <div class="save-the-date-img" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
         <%= image_tag "laurel-1.png", class: "img-fluid mt-1" %>
       </div>
-
-
-     <!--  <img class="img-fluid mt-1" src="/images/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/> -->
       <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">20<sup></sup>.08.2020</p>
     </div>
   </div>
@@ -36,18 +33,21 @@
   <div class="container ww-wedding-event">
     <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Торжество</h2>
     <div class="row">
-      <div class="col-md-7 col-sm-12">
+      <div class="col-md-6 col-sm-12">
         <div class="my-3">
           <div class="h4">Свадебный вечер</div>
           <ul>
             <li><i class="text-muted fas fa-map-marker-alt"></i><span class="pl-2 text-muted">Брестский р-н, д. Тюхиничи 8 ой км трассы М1</span></li>
             <li class="pt-2"><i class="text-muted far fa-calendar-alt"></i><span class="pl-2 text-muted">20 Авг 2020, 14:00</span></li>
           </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nulla enim arcu dictum lobortis, ac congue non hendrerit accumsan. Ut penatibus litora platea mi mus tempus eros proin, maecenas hac eget hendrerit inceptos per tempor sodales, id varius nulla commodo augue lectus pulvinar. Etiam suscipit leo sollicitudin vivamus tempor himenaeos vitae mattis dictum posuere, tincidunt aenean litora aptent facilisis eu est gravida.</p>
+          <p>Ресторан «Рынькаускi палац» располагается в загородной усадьбе «Рынькаука» в окрестностях Бреста..
+          Все залы имеют профессиональное световое и звуковое оснащение, оборудованы системой кондиционирования воздуха, беспроводным интернетом (бесплатный Wi-Fi). Для комфортного пребывания у нас в инфраструктуру усадьбы входят детская площадка и автомобильная парковка.</p>
         </div>
       </div>
-      <div class="col-md-5 col-sm-12">
-        <div class="my-3"><img class="img-fluid" src="images/wedding-party.jpg" alt="Wedding place" data-aos="fade-down-right" data-aos-duration="1000"/></div>
+      <div class="col-md-6 col-sm-12">
+        <div class="my-3" alt="Wedding place" data-aos="fade-down-right" data-aos-duration="1000">
+          <%= image_tag "wedding-party.jpg", class: "img-fluid" %>
+        </div>
       </div>
     </div>
   </div>
@@ -56,21 +56,25 @@
   <div class="ww-photo-gallery">
     <div class="container">
       <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Галерея</h2>
-      <div class="col-md-12 text-center ww-category-filter mb-4"><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="all">Все</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="we_are">Мы</a><a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="place">Место торжества</a></div>
+      <div class="col-md-12 text-center ww-category-filter mb-4">
+        <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="all">Все</a>
+        <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="we_are">Мы</a>
+        <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="place">Место торжества</a></div>
       <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
         <div class="card-columns">
 
-          <div class="card" data-groups="[&quot;we_are&quot;,&quot;place&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-1.jpg" alt="Gallery Pic 1"/></a></div>
+          <div class="card" data-groups="[&quot;place&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+            <%= image_tag "place-1.jpg", class: "img-fluid" %></a></div>
+          <div class="card" data-groups="[&quot;place&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+            <%= image_tag "place-2.jpg", class: "img-fluid" %></a></div>
+          <div class="card" data-groups="[&quot;place&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+            <%= image_tag "place-3.jpg", class: "img-fluid" %></a></div>
+          <div class="card" data-groups="[&quot;place&quot;]"><a href="images/gallery-pic-1.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+            <%= image_tag "place-4.jpg", class: "img-fluid" %></a></div>
 
-          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-3.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-3.jpg" alt="Gallery Pic 3"/></a></div>
-
-          <div class="card" data-groups="[&quot;place&quot;,&quot;we_are&quot;]"><a href="images/gallery-pic-4.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-4.jpg" alt="Gallery Pic 4"/></a></div>
-
-          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-5.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-5.jpg" alt="Gallery Pic 5"/></a></div>
-
-          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-7.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery-pic-7.jpg" alt="Gallery Pic 7"/></a></div>
-
-
+          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-3.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><%= image_tag "we_are.jpg", class: "img-fluid" %></a></div>
+          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-5.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><%= image_tag "we_are1.jpg", class: "img-fluid" %></a></div>
+          <div class="card" data-groups="[&quot;we_are&quot;]"><a href="images/gallery-pic-7.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><%= image_tag "we_are2.jpg", class: "img-fluid" %></a></div>
         </div>
       </div>
     </div>
@@ -79,7 +83,7 @@
 <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
   <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="col text-center">
-      <h2 class="h1 ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000">Будем рады видеть</h2>
+      <h2 class="h1 ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000">Будем рады вас видеть</h2>
     </div>
     <div class="row ww-rsvp-form">
       <div class="col-md-10">

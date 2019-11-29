@@ -9032,7 +9032,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-  background: url("home-img.jpg") no-repeat center center;
+  background: url("1.jpg") no-repeat center center;
   background-size: cover;
   background-position: 70%;
   height: 100vh;
@@ -9137,26 +9137,10 @@ body {
 }
 
 /* Wedding Event Style */
+
 .ww-wedding-event ul {
   list-style: none;
   padding-left: 0;
-}
-
-/* Couple Friends Style  */
-.ww-couple-friends .carousel {
-  padding: 40px 0;
-}
-
-.ww-couple-friends .carousel-indicators {
-  bottom: 0px;
-}
-
-.ww-couple-friends .carousel-indicators li {
-  background-color: #6c757d;
-}
-
-.ww-couple-friends .carousel-indicators .active {
-  background-color: #f58a77;
 }
 
 /* Photo Gallery Style */
@@ -9195,7 +9179,7 @@ body {
 
 /* RSVP Style */
 .ww-rsvp-detail {
-  background: url("../images/rsvp-img.jpg") no-repeat center center;
+  background: url("rsvp-img.jpg") no-repeat center center;
   background-size: cover;
   min-height: 500px;
   position: relative;
