@@ -4,7 +4,6 @@
     <title>Kim&Angelina</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +27,7 @@
 
     <%= yield %>
 
+    <%= javascript_include_tag "application.js", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "aos.js" %>
     <%= javascript_include_tag "ekko-lightbox.min.js" %>
     <%= javascript_include_tag "main.js" %>
