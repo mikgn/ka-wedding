@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.assets.precompile += %w( aos.js cable.js ekko-lightbox.min.js main.js main.css ekko-lightbox.css aos.css)
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
