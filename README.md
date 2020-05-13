@@ -1,12 +1,15 @@
 ## ka-wedding
 
-#### ka-wedding is a wedding page with option to confirmation.
-#### admin can track guests by admin panel.
+- ka-wedding is a wedding page with option to guest confirmation.
+- admin can track guests by admin panel.
 
+## On heroku
+
+- Page [link](https://kim-angelina-wedding.herokuapp.com/)
 
 ## Installation
 
- - Cloning a repository
+- Cloning a repository
 
 ```bash
 git clone git@github.com:mikgn/ka-wedding.git
