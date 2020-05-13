@@ -1,24 +1,73 @@
-# README
+## ka-wedding
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### ka-wedding is a wedding page with option to confirmation.
+#### admin can track guests by admin panel.
 
-Things you may want to cover:
 
-* Ruby version
+## Installation
 
-* System dependencies
+ - Cloning a repository
 
-* Configuration
+```bash
+git clone git@github.com:mikgn/ka-wedding.git
+```
+<br>
 
-* Database creation
+ - Simple Redis installation and using [link](https://redis.io/topics/quickstart)
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+1. Bundle
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bundle install
+```
 
-* Deployment instructions
+2. Migrations
 
-* ...
+```bash
+rake db:create db:migrate
+```
+
+3. Run rails server locally by
+
+```bash
+rails server
+```
+
+4. Open your browser and type in
+
+```bash
+localhost:3000
+```
+
+## gems
+
+
+Front
+
+```bash
+gem 'bootstrap'
+gem 'jquery-rails'
+```
+
+Test
+
+```bash
+gem 'rspec-rails'
+```
+
+DB
+
+```bash
+gem 'pg'
+```
+
+Notifications
+
+```bash
+gem "gritter"
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
