@@ -30,3 +30,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "gritter", "1.2.0"
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'devise'
+
+gem 'activeadmin'
