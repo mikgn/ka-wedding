@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'guests#index'
-  resources :guests
+
+  resources :guests, only: [:index, :create, :edit]
 end

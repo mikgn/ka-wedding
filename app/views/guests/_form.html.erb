@@ -1,12 +1,8 @@
 <%= form_with(model: guest, remote: true) do |form| %>
   <% if guest.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-      <% guest.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+        <% guest.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, :image => :warning, sticky: false) %>
+    <% end %>
   <% end %>
 
   <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
@@ -60,5 +56,3 @@
     </div>
   </div>
 <% end %>
-
-

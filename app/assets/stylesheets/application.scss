@@ -1,1 +1,10 @@
 @import "bootstrap";
+@import "gritter";
+
+.gritter-with-image {
+  font-size: 26px;
+}
+
+.gritter-title {
+  display: none;
+}
