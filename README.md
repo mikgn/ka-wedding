@@ -14,9 +14,6 @@
 ```bash
 git clone git@github.com:mikgn/ka-wedding.git
 ```
-<br>
-
- - Simple Redis installation and using [link](https://redis.io/topics/quickstart)
 
 ## Usage
 
