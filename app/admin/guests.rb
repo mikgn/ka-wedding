@@ -2,7 +2,6 @@ ActiveAdmin.register Guest do
   permit_params :name, :message, :number_of_guests
 
   index do
-    selectable_column
     column :name
     column :number_of_guests
     column :message do |resource|
